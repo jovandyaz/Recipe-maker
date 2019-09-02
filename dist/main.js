@@ -7,8 +7,3 @@ const fetchRecipeData = function () {
         console.log(recipeData)
     })
 }
-
-$(".container").on("click",".recipes-template", function () {
-    let postId = $(this).closest(".recipe").data().id
-
-})
