@@ -4,22 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Roster {NBA}</title>
+    <title>Recipe App</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 
 <body>
     <div id="head">
-        <h1><img src="https://on.nba.com/2jSPRcz"></h1>
-        <input type="text" id="input" placeholder="Team NBA">
-        <button id= "button" onclick=fetchNBAData()>Search</button>
+        <h1><img src="https://bit.ly/2lOwvWr"></h1>
+        <input type="text" id="input" placeholder="Ingredient">
+        <button id="button" onclick=fetchRecipeData()>Search</button>
     </div>
     <div class="container"></div>
-<!-- HANDLEBARS -->
-        <script id="players-template" type="text/x-handlebars-template">
-              {{#each NBAData}}
-              <div id="player">
-                    <h4>{{LastName}} {{Name}}</h4><p>{{Jersey}}</p><img src= {{Img}}><p>{{Position}}</p><br>
+    <!-- HANDLEBARS -->
+    <script id="recipes-template" type="text/x-handlebars-template">
+              {{#each recipeData}}
+              <div id="recipe">
+                    <div>
+                        <h3><a href={{href}}>{{title}}</a></h3>
+                        <h4><p>{{strCategory}}</p></h4>
+                    </div>
+                    <div class="img"><img id="img" src= {{thumbnail}}><br></div>
+                    <div class="ingredient">
+                        <p>INGREDIENTS:</p>
+                        <li>{{ingredients}}</li></div>
+                    </div>
+
                 </div>
               {{/each}}
           </script>
@@ -27,6 +36,8 @@
     <script src="/jquery/dist/jquery.js"></script>
     <script src="/handlebars/dist/handlebars.js"></script>
     <script src="main.js"></script>
+    <script src="Render.js"></script>
+
 </body>
 
 </html>

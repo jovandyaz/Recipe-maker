@@ -1,16 +1,14 @@
 
-const renderHB = function (tmp, elm, NBAData) {
-    const source = $(tmp).html()
-    const template = Handlebars.compile(source)
-    let newHTML = template({ NBAData })
-    $(elm).empty().append(newHTML)
-
-}
-
-const fetchNBAData = function () {
+const fetchRecipeData = function () {
     let input = $("#input").val()
-    $.get(`teams/${input}`, function (NBAData) {
-        renderHB('#players-template', '.container', NBAData)
-        console.log(NBAData)
+    console.log(input)
+    $.get(`recipes/${input}`, function (recipeData) {
+        renderHB('#recipes-template', '.container', recipeData)
+        console.log(recipeData)
     })
 }
+
+$(".container").on("click",".recipes-template", function () {
+    let postId = $(this).closest(".recipe").data().id
+
+})

@@ -1,11 +1,12 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1525973132219-a04334a76080?ixlib=rb-1.2.1&auto=format&fit=crop&w=1354&q=80");
+    background-image: url("https://bit.ly/2lNKBr4");
 }
 
 .container{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 
 #head{
@@ -31,19 +32,37 @@ body{
     box-shadow: 5px 5px 2px grey;
     text-align: center;
     align-content: center;    
-    background-color: rgb(201, 41, 41);
+    background-color: green;
     font-size: 20px;
     color: whitesmoke;
 }
 
-#player{
+#recipe{
     display: grid;
     font-size: 20px;
-    color: black;
-    /* background-color: aliceblue; */
+    color: green;
     border-style: groove;
     box-shadow: 5px 5px 2px grey;
     text-align: center;
     align-content: center;
     border-radius: 5px;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    border-style: groove;
+    box-shadow: 5px 5px 2px grey;
+    align-content: center;
+}
+
+#img{
+    align-content: center;
+}
+
+.ingredient{
+    width: 300px;
+    color: black;
+    align-content: center;
+    text-align: center;
 }
