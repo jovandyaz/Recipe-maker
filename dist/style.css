@@ -1,0 +1,49 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1525973132219-a04334a76080?ixlib=rb-1.2.1&auto=format&fit=crop&w=1354&q=80");
+}
+
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#head{
+    margin: 10px;
+    align-content: center;
+}
+
+#input{
+    margin-bottom: 20px;
+    padding-right: 100vh;
+    height: 30px;
+    border-style: groove;
+    box-shadow: 5px 5px 2px grey;
+    font-size: 20px;
+
+}
+
+#button{
+    margin-bottom: 20px;
+    padding-right: 10vh;
+    height: 35px;
+    border-style: groove;
+    box-shadow: 5px 5px 2px grey;
+    text-align: center;
+    align-content: center;    
+    background-color: rgb(201, 41, 41);
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#player{
+    display: grid;
+    font-size: 20px;
+    color: black;
+    /* background-color: aliceblue; */
+    border-style: groove;
+    box-shadow: 5px 5px 2px grey;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
